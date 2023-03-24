@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* @font-face {
+    font-family: 'Freitag Display Trial';
+    src: url('../fonts/Freitag-Display-L-trial.ttf') format('truetype')
+  } */
+  
+
+
+.tittlePage{
+    font-family: 'Freitag Display Trial';
+}
+
+.page{
+    font-family: 'Freitag Display Trial', sans-serif;
+
+}
+
+.itemNav{
+    font-family: 'Montserrat', sans-serif;
+    color: wheat;
+}
