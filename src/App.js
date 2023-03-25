@@ -3,12 +3,14 @@ import Home from './pages/Home';
 import AppBarR from './Components/AppBar';
 import ResponsiveAppBar from './Components/AppBar';
 import Zapatos from './pages/Zapatos';
+import RoutesDos from './routes/routes';
 
 function App() {
   return (
     <>
-      <ResponsiveAppBar></ResponsiveAppBar>
-      <Zapatos></Zapatos>
+    <RoutesDos></RoutesDos>
+      {/* <ResponsiveAppBar></ResponsiveAppBar>
+      <Zapatos></Zapatos> */}
     </>
   );
 }

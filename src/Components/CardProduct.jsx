@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function CardProduct({ image, title, description }) {
+export default function CardProduct({ image, title, description,price }) {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -18,9 +18,13 @@ export default function CardProduct({ image, title, description }) {
         <Typography gutterBottom variant="h5" component="div">
           {title}
         </Typography>
+        <Typography variant="body2" color="red">
+            ${price}
+        </Typography>
         <Typography variant="body2" color="text.secondary">
             {description}
         </Typography>
+   
       </CardContent>
     </Card>
   );

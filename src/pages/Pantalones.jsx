@@ -31,174 +31,230 @@ import camisa26 from '../assets/Pantalones/26.png';
 import camisa27 from '../assets/Pantalones/27.png';
 import camisa28 from '../assets/Pantalones/28.png';
 import camisa29 from '../assets/Pantalones/29.png';
-import camisa30 from '../assets/Pantalones/30.png';
 
 
 const Pantalones = () => {
 
+    const min = 1;
+    const max = 100;
+    let randomInt = 0
+
     const itemsCamisas = [
         {
-            name: 'Item 1s',
+            name: 'Pantalon 1',
             description: 'Descripción del Item 1',
-            image: camisa1
+            image: camisa1,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
         },
         {
-            name: 'Item 2',
+            name: 'Pantalon 2',
             description: 'Descripción del Item 2',
-            image: camisa2
+            image: camisa2,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 3',
+            name: 'Pantalon 3',
             description: 'Descripción del Item 3',
-            image: camisa3
+            image: camisa3,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 4',
+            name: 'Pantalon 4',
             description: 'Descripción del Item 4',
-            image: camisa4
+            image: camisa4,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 5',
+            name: 'Pantalon 5',
             description: 'Descripción del Item 5',
-            image: camisa5
+            image: camisa5,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 6',
+            name: 'Pantalon 6',
             description: 'Descripción del Item 6',
-            image: camisa6
+            image: camisa6,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 7',
+            name: 'Pantalon 7',
             description: 'Descripción del Item 7',
-            image: camisa7
+            image: camisa7,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 8',
+            name: 'Pantalon 8',
             description: 'Descripción del Item 8',
-            image: camisa8
+            image: camisa8,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 9',
+            name: 'Pantalon 9',
             description: 'Descripción del Item 9',
-            image: camisa9
+            image: camisa9,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 10',
+            name: 'Pantalon 10',
             description: 'Descripción del Item 10',
-            image: camisa10
+            image: camisa10,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 11',
+            name: 'Pantalon 11',
             description: 'Descripción del Item 11',
-            image: camisa11
+            image: camisa11,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 12',
+            name: 'Pantalon 12',
             description: 'Descripción del Item 12',
-            image: camisa12
+            image: camisa12,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 13',
+            name: 'Pantalon 13',
             description: 'Descripción del Item 13',
-            image: camisa13
+            image: camisa13,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 14',
+            name: 'Pantalon 14',
             description: 'Descripción del Item 14',
-            image: camisa14
+            image: camisa14,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 15',
+            name: 'Pantalon 15',
             description: 'Descripción del Item 15',
-            image: camisa15
+            image: camisa15,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 16',
+            name: 'Pantalon 16',
             description: 'Descripción del Item 16',
-            image: camisa16
+            image: camisa16,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 17',
+            name: 'Pantalon 17',
             description: 'Descripción del Item 17',
-            image: camisa17
+            image: camisa17,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 18',
+            name: 'Pantalon 18',
             description: 'Descripción del Item 18',
-            image: camisa18
+            image: camisa18,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 19',
+            name: 'Pantalon 19',
             description: 'Descripción del Item 19',
-            image: camisa19
+            image: camisa19,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 20',
+            name: 'Pantalon 20',
             description: 'Descripción del Item 20',
-            image: camisa20
+            image: camisa20,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 21',
+            name: 'Pantalon 21',
             description: 'Descripción del Item 21',
-            image: camisa21
+            image: camisa21,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 22',
+            name: 'Pantalon 22',
             description: 'Descripción del Item 22',
-            image: camisa22
+            image: camisa22,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 23',
+            name: 'Pantalon 23',
             description: 'Descripción del Item 23',
-            image: camisa23
+            image: camisa23,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 24',
+            name: 'Pantalon 24',
             description: 'Descripción del Item 24',
-            image: camisa24
+            image: camisa24,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 25',
+            name: 'Pantalon 25',
             description: 'Descripción del Item 25',
-            image: camisa25
+            image: camisa25,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 26',
+            name: 'Pantalon 26',
             description: 'Descripción del Item 26',
-            image: camisa26
+            image: camisa26,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 27',
+            name: 'Pantalon 27',
             description: 'Descripción del Item 27',
-            image: camisa27
+            image: camisa27,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 28',
+            name: 'Pantalon 28',
             description: 'Descripción del Item 28',
-            image: camisa28
+            image: camisa28,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 29',
+            name: 'Pantalon 29',
             description: 'Descripción del Item 29',
-            image: camisa29
+            image: camisa29,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         },
         {
-            name: 'Item 30',
+            name: 'Pantalon 30',
             description: 'Descripción del Item 30',
-            image: camisa30
+            image: camisa25,
+            price:Math.floor(Math.random() * (max - min + 1)) + min 
+
         }
     ]
 
 
-
     return (
 
-        // <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-
-
-                {/* <Box sx={{ display: 'flex', margin: 0 }}> */}
-
                     {
                         itemsCamisas.map(( product) => (
                             <Grid item xs={2} sm={4} md={4} >
@@ -206,13 +262,11 @@ const Pantalones = () => {
                                     image={product.image}
                                     title={product.name}
                                     description={product.description}
+                                    price={product.price}
                                 />
                             </Grid>
-                        ))}
-                {/* </Box> */}
-                
+                        ))}                
             </Grid>
-        // </Box>
 
 
     );

@@ -8,6 +8,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import './AppBar.css'
+import { Link } from 'react-router-dom';
 
 const pages = ['Zapatos', 'Camisas', 'Pantalones'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -45,13 +46,14 @@ function ResponsiveAppBar() {
         transition: 'background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out'
       }}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        {/* <Toolbar disableGutters>
     
           <Box justifyContent="center" sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
+                
                 sx={{ my: 2, color: isScrolled ? '#b49a66' : 'wheat', display: 'block' }}
               >
                 <p  > {page} </p>
@@ -59,7 +61,21 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
+        </Toolbar> */}
+        <Toolbar disableGutters>
+          <Box justifyContent="center" sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' } }}>
+            {pages.map((page) => (
+              <Link key={page} to={`/${page}`} onClick={handleCloseNavMenu} style={{ textDecoration: 'none' }}>
+                <Button
+                  sx={{ my: 2, color: isScrolled ? '#b49a66' : 'wheat', display: 'block' }}
+                >
+                  <p>{page}</p>
+                </Button>
+              </Link>
+            ))}
+          </Box>
         </Toolbar>
+
       </Container>
     </AppBar>
   );
